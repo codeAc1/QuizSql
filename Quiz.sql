@@ -57,6 +57,7 @@ on gr.Id=st.GroupId
 
 select * from GetStudent
 
+--Procedure yazmalı - göndərilən baldan yüksək bal alan tələbələrin siyahısını göstərməlidir - 20 bal
 Create Procedure usp_Select_Students(@Grade int)
 	AS
 	Begin
@@ -65,7 +66,10 @@ Create Procedure usp_Select_Students(@Grade int)
 	End
 
 	 --Test Procedure
-	Exec usp_Select_Students '3'
+	Exec usp_Select_Students 70
+
+--Funksiya yazmalı - göndərilən qrup adina uyğun neçə tələbə olduğunu göstərməlidir - 20 bal
+
 
 
 
